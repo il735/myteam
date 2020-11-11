@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 24px;
+
+
+  &--light{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 9px 33px 11px 32px;
+    border: 2px solid #ffffff;
+    color: #fff;
+  }
+  &--light:hover{
+    background-color: #fff;
+    color: #002529;
+  }
+  &:active{
+    background-color: transparent;
+    color: #fff ;
+    opacity: 0.25;
+  }
+}
