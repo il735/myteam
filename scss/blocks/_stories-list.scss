@@ -1,0 +1,102 @@
+.stories-list{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stories-list__item{
+  max-width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.stories-list__story-box{
+  order: 1;
+
+  &--kady::after{
+    content: "";
+    width: 62px;
+    height: 62px;
+    transform: translateX(225%);
+    display: block;
+    background-image: url("../img/kady.jpg");
+    background-repeat: no-repeat;
+    background-size: 62px 62px;
+    background-position: center;
+    border-radius: 50%;
+  }
+  &--aiysha::after{
+    content: "";
+    width: 62px;
+    height: 62px;
+    transform: translateX(225%);
+    display: block;
+    background-image: url("../img/aiysha.jpg");
+    background-repeat: no-repeat;
+    background-size: 62px 62px;
+    background-position: center;
+    border-radius: 50%;
+  }
+  &--arthur::after{
+    content: "";
+    width: 62px;
+    height: 62px;
+    transform: translateX(225%);
+    display: block;
+    background-image: url("../../img/arthur.jpg");
+    background-repeat: no-repeat;
+    background-size: 62px 62px;
+    background-position: center;
+    border-radius: 50%;
+  }
+}
+
+.stories-list__heading{
+  margin: 0;
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+}
+
+.stories-list__heading-about{
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.stories-list__blockquote{
+  margin: 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .stories-list__story-box--kady::after{
+    background-image: url("../img/kady@2x.jpg");
+  }
+  .stories-list__story-box--aiysha::after{
+    background-image: url("../img/aiysha@2x.jpg");
+  }
+  .stories-list__story-box--arthur::after{
+    background-image: url("../img/arthur@2x.jpg");
+  }
+}

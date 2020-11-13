@@ -1,0 +1,26 @@
+.stories{
+  background-color: #004047;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-image: url("../img/stories-bg-top.svg"),
+                    url("../img/stories-bg-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: 147px 100px, 200px 200px;
+  background-position: left calc(50% - 687px) top 0, left calc(50% + 660px) bottom -100px;
+}
+
+.stories__heading{
+  margin: 0;
+  margin-bottom: 56px;
+  max-width: 932px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.stories__heading-blue{
+  color: #79C8C7;
+}
