@@ -5,4 +5,16 @@
 .site-header__container{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 525px){
+
+  .site-header{
+    position: fixed;
+    z-index: 1000;
+    padding-top: 48px;
+    padding-bottom: 10px;
+    background-color: $main-color;
+  }
 }

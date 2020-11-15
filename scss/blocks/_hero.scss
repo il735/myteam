@@ -5,17 +5,15 @@
                     url("../img/hero-bg-pink.svg");
   background-repeat: no-repeat;
   background-size: 200px 200px, 358px 200px;
-  background-position: calc(50% - 760px) 120px, calc(50% + 330px) 480px;
+  background-position: calc(50% - 760px) 120px, left calc(50% + 330px) bottom -97px;
 }
 
 .hero__hero-box{
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
 }
 
-.hero__heading-box{
-  width: 635px;
-}
 .hero__heading{
   margin: 0;
   font-weight: bold;
@@ -29,6 +27,7 @@
 
 .hero__text-box{
   max-width: 445px;
+  margin-left: 19px;
 }
 .hero__text{
   position: relative;
@@ -48,4 +47,98 @@
   height: 4px;
   background-color: #79C8C7;
   display: block;
+}
+
+@media only screen and (max-width: 897px){
+
+  .hero{
+    background-image: url("../img/hero-bg-pink.svg");
+    background-size: 358px 200px;
+    background-repeat: no-repeat;
+    background-position: left 50% bottom -97px;
+  }
+
+  .hero__hero-box{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero__heading{
+    margin-bottom: 37px;
+    font-size: 71px;
+    line-height: 67px;
+  }
+
+  .hero__text-box{
+    max-width: 699px;
+    margin-left: 0;
+  }
+
+  .hero__text{
+    font-size: 19px;
+    line-height: 33px;
+  }
+
+  .hero__text::before{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .hero{
+    padding-top: 112px;
+    padding-bottom: 256px;
+    background-image: url("../img/hero-bg-pink.svg");
+    background-size: 358px 200px;
+    background-repeat: no-repeat;
+    background-position: left 50% bottom -97px;
+  }
+
+  .hero__heading-box{
+    max-width: 683px;
+  }
+
+  .hero__heading{
+    margin-bottom: 24px;
+    font-size: 64px;
+    line-height: 56px;
+  }
+
+  .hero__text-box{
+    max-width: 457px;
+    margin: 0;
+  }
+
+  .hero__text{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .hero__text::before{
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 525px){
+
+  .hero{
+    padding-top: 200px;
+    padding-bottom: 197px;
+  }
+
+  .hero__heading-box{
+    max-width: 327px;
+  }
+
+  .hero__heading{
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .hero__text-box{
+    max-width: 327px;
+  }
 }
