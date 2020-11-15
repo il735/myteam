@@ -8,6 +8,34 @@
   flex-wrap: wrap;
 }
 
+.site-header__logo{
+  margin-right: 80px;
+}
+
+.site-header__logo-img{
+  display: block;
+}
+
+.site-header__sitenav{
+  display: inline-flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 769px){
+
+  .site-header__logo{
+    margin-right: 48px;
+  }
+
+  .site-header__logo-img{
+    width: 128px;
+    height: 32px;
+  }
+}
+
 @media only screen and (max-width: 525px){
 
   .site-header{

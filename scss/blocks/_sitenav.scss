@@ -1,16 +1,8 @@
-.site-header__sitenav{
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .sitenav__list{
   padding: 0;
   margin: 0;
   list-style-type: none;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   flex-wrap: wrap;
   margin-right: 10px;
