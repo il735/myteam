@@ -18,9 +18,29 @@
     background-color: #fff;
     color: #002529;
   }
-  &:active{
+  &--light:active{
     background-color: transparent;
     color: #fff ;
     opacity: 0.25;
   }
+
+  &--dark{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 9px 33px 11px 32px;
+    border: 2px solid #002529;
+    color: #002529;
+  }
+  &--dark:hover{
+    background-color: #002529;
+    color: #fff;
+  }
+  &--dark:active{
+    background-color: transparent;
+    color: #002529;
+    opacity: 0.25;
+  }
+
 }
