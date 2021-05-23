@@ -29,6 +29,8 @@
         <a class="site-header__btn button button--light" href="contact-us.html">contact us</a>
       </nav>
 
+      <button class="site-header__toggler" type="button" aria-label="Menu button"></button>
+
     </div>
 
   </header>
@@ -201,6 +203,15 @@
     </div>
 
   </footer>
+
+  <script>
+    let siteHeader = document .querySelector('.site-header');
+    let siteToggler = siteHeader .querySelector('.site-header__toggler');
+
+    siteToggler .addEventListener('click', function() {
+      siteHeader.classList.toggle('site-header--open')
+    });
+  </script>
 
 </body>
 </html>
